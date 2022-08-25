@@ -1,0 +1,9 @@
+module nopGen(
+input IF_ID_PCSrc,
+input [31:0] instruction,
+output reg instOut
+);
+
+assign instOut = IF_ID_PCSrc ? (32'd0) : instruction;
+
+endmodule

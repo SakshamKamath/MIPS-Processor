@@ -1,0 +1,463 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Apr 20 17:36:45 2022
+# Process ID: 30016
+# Current directory: D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8084 D:\BITS\ECE 3-2\CS F342 - COMPUTER ARCHITECHTURE\miniProject\mips\mips.xpr
+# Log file: D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/vivado.log
+# Journal file: D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.xpr}
+open_bd_design {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}
+update_compile_order -fileset sources_1
+open_bd_design {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}
+update_module_reference mips_programCounter_0_0
+create_bd_cell -type module -reference andGate andGate_1
+delete_bd_objs [get_bd_cells andGate_1]
+add_files -norecurse -scan_for_includes {{D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/new/gatedClk.v}}
+update_compile_order -fileset sources_1
+disconnect_bd_net /i_clk_0_1 [get_bd_pins IF_ID/in_clock]
+create_bd_cell -type module -reference clkEn clkEn_0
+update_module_reference mips_clkEn_0_0
+connect_bd_net [get_bd_pins clkEn_0/CLKout] [get_bd_pins IF_ID/in_clock]
+connect_bd_net [get_bd_ports in_clock] [get_bd_pins clkEn_0/clk]
+save_bd_design
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes {{D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/new/HDU.v}}
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference HDU HDU_0
+set_property location {6 1801 -125} [get_bd_cells HDU_0]
+connect_bd_net [get_bd_pins HDU_0/PCWrite] [get_bd_pins programCounter_0/PCEn]
+connect_bd_net [get_bd_pins HDU_0/IF_ID_Write] [get_bd_pins clkEn_0/En]
+connect_bd_net [get_bd_pins HDU_0/ID_EX_RegisterRt] [get_bd_pins ID_EX/Q4]
+connect_bd_net [get_bd_pins instructionSlice/Dout] [get_bd_pins HDU_0/IF_ID_RegisterRs]
+connect_bd_net [get_bd_pins instructionSlice/Dout1] [get_bd_pins HDU_0/IF_ID_RegisterRt]
+connect_bd_net [get_bd_pins HDU_0/ID_EX_MemtoReg] [get_bd_pins ID_EX/Q10]
+save_bd_design
+regenerate_bd_layout
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference mux mux_5
+group_bd_cells ControlMUX [get_bd_cells mux_5]
+set_property -dict [list CONFIG.width {1}] [get_bd_cells ControlMUX/mux_5]
+copy_bd_objs /  [get_bd_cells {ControlMUX/mux_5}]
+move_bd_cells [get_bd_cells ControlMUX] [get_bd_cells mux_5]
+copy_bd_objs /  [get_bd_cells {ControlMUX/mux_5}]
+move_bd_cells [get_bd_cells ControlMUX] [get_bd_cells mux_5]
+copy_bd_objs /  [get_bd_cells {ControlMUX/mux_5}]
+move_bd_cells [get_bd_cells ControlMUX] [get_bd_cells mux_5]
+copy_bd_objs /  [get_bd_cells {ControlMUX/mux_5}]
+move_bd_cells [get_bd_cells ControlMUX] [get_bd_cells mux_5]
+copy_bd_objs /  [get_bd_cells {ControlMUX/mux_5}]
+move_bd_cells [get_bd_cells ControlMUX] [get_bd_cells mux_5]
+copy_bd_objs /  [get_bd_cells {ControlMUX/mux_5}]
+move_bd_cells [get_bd_cells ControlMUX] [get_bd_cells mux_5]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 ControlMUX/xlconstant_0
+endgroup
+set_property -dict [list CONFIG.CONST_VAL {0}] [get_bd_cells ControlMUX/xlconstant_0]
+connect_bd_net [get_bd_pins ControlMUX/mux_8/in0] [get_bd_pins ControlMUX/xlconstant_0/dout]
+connect_bd_net [get_bd_pins ControlMUX/mux_11/in0] [get_bd_pins ControlMUX/xlconstant_0/dout]
+connect_bd_net [get_bd_pins ControlMUX/mux_9/in0] [get_bd_pins ControlMUX/xlconstant_0/dout]
+connect_bd_net [get_bd_pins ControlMUX/mux_7/in0] [get_bd_pins ControlMUX/xlconstant_0/dout]
+connect_bd_net [get_bd_pins ControlMUX/mux_6/in0] [get_bd_pins ControlMUX/xlconstant_0/dout]
+connect_bd_net [get_bd_pins ControlMUX/mux_5/in0] [get_bd_pins ControlMUX/xlconstant_0/dout]
+connect_bd_net [get_bd_pins ControlMUX/mux_10/in0] [get_bd_pins ControlMUX/xlconstant_0/dout]
+regenerate_bd_layout
+set_property location {6 2039 1772} [get_bd_cells ControlMUX]
+set_property location {9 3314 1360} [get_bd_cells ControlMUX]
+connect_bd_net [get_bd_pins IF_ID/Q2] [get_bd_pins ControlMUX/mux_5/in1]
+connect_bd_net [get_bd_pins IF_ID/Q3] [get_bd_pins ControlMUX/mux_6/in1]
+connect_bd_net [get_bd_pins IF_ID/Q4] [get_bd_pins ControlMUX/mux_7/in1]
+connect_bd_net [get_bd_pins IF_ID/Q7] [get_bd_pins ControlMUX/mux_9/in1]
+connect_bd_net [get_bd_pins IF_ID/Q8] [get_bd_pins ControlMUX/mux_10/in1]
+connect_bd_net [get_bd_pins IF_ID/Q9] [get_bd_pins ControlMUX/mux_11/in1]
+disconnect_bd_net /ControlMUX/xlconstant_0_dout [get_bd_pins ControlMUX/mux_8/in0]
+copy_bd_objs /  [get_bd_cells {ControlMUX/xlconstant_0}]
+move_bd_cells [get_bd_cells ControlMUX] [get_bd_cells xlconstant_0]
+set_property -dict [list CONFIG.CONST_WIDTH {3}] [get_bd_cells ControlMUX/xlconstant_1]
+set_property -dict [list CONFIG.width {13}] [get_bd_cells ControlMUX/mux_8]
+set_property -dict [list CONFIG.width {3}] [get_bd_cells ControlMUX/mux_8]
+connect_bd_net [get_bd_pins ControlMUX/xlconstant_1/dout] [get_bd_pins ControlMUX/mux_8/in0]
+connect_bd_net [get_bd_pins IF_ID/Q6] [get_bd_pins ControlMUX/mux_8/in1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 ControlMUX/xlconcat_0
+endgroup
+set_property -dict [list CONFIG.NUM_PORTS {3}] [get_bd_cells ControlMUX/xlconcat_0]
+connect_bd_net [get_bd_pins HDU_0/ControlMUX] [get_bd_pins ControlMUX/mux_5/ctrl]
+connect_bd_net [get_bd_pins ControlMUX/ctrl] [get_bd_pins ControlMUX/mux_6/ctrl]
+connect_bd_net [get_bd_pins ControlMUX/ctrl] [get_bd_pins ControlMUX/mux_7/ctrl]
+delete_bd_objs [get_bd_cells ControlMUX/xlconcat_0]
+connect_bd_net [get_bd_pins ControlMUX/ctrl] [get_bd_pins ControlMUX/mux_8/ctrl]
+connect_bd_net [get_bd_pins ControlMUX/ctrl] [get_bd_pins ControlMUX/mux_9/ctrl]
+connect_bd_net [get_bd_pins ControlMUX/ctrl] [get_bd_pins ControlMUX/mux_10/ctrl]
+connect_bd_net [get_bd_pins ControlMUX/ctrl] [get_bd_pins ControlMUX/mux_11/ctrl]
+disconnect_bd_net /IF_ID_Q2 [get_bd_pins ID_EX/D12]
+connect_bd_net [get_bd_pins ControlMUX/mux_5/muxOut] [get_bd_pins ID_EX/D12]
+disconnect_bd_net /D5_1 [get_bd_pins ID_EX/D5]
+startgroup
+connect_bd_net [get_bd_pins ControlMUX/mux_6/muxOut] [get_bd_pins ID_EX/D5]
+endgroup
+disconnect_bd_net /D6_1 [get_bd_pins ID_EX/D6]
+startgroup
+connect_bd_net [get_bd_pins ControlMUX/mux_7/muxOut] [get_bd_pins ID_EX/D6]
+endgroup
+disconnect_bd_net /D7_1 [get_bd_pins ID_EX/D7]
+startgroup
+connect_bd_net [get_bd_pins ControlMUX/mux_8/muxOut] [get_bd_pins ID_EX/D7]
+endgroup
+disconnect_bd_net /D9_1 [get_bd_pins ID_EX/D9]
+startgroup
+connect_bd_net [get_bd_pins ControlMUX/mux_9/muxOut] [get_bd_pins ID_EX/D9]
+endgroup
+disconnect_bd_net /D10_1 [get_bd_pins ID_EX/D10]
+startgroup
+connect_bd_net [get_bd_pins ControlMUX/mux_10/muxOut] [get_bd_pins ID_EX/D10]
+endgroup
+disconnect_bd_net /D11_1 [get_bd_pins ID_EX/D11]
+startgroup
+connect_bd_net [get_bd_pins ControlMUX/mux_11/muxOut] [get_bd_pins ID_EX/D11]
+endgroup
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+generate_target Simulation [get_files {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}]
+export_ip_user_files -of_objects [get_files {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}}] -directory {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.ip_user_files/sim_scripts} -ip_user_files_dir {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.ip_user_files} -ipstatic_source_dir {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.cache/compile_simlib/modelsim} {questa=D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.cache/compile_simlib/questa} {riviera=D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.cache/compile_simlib/riviera} {activehdl=D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips_wrapper_behav.wcfg}
+source mips_wrapper.tcl
+add_force {/mips_wrapper/mips_i/in_clock} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+open_bd_design {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}
+update_module_reference mips_instructionMemory_0_0
+close_sim
+generate_target Simulation [get_files {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}]
+export_ip_user_files -of_objects [get_files {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}}] -directory {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.ip_user_files/sim_scripts} -ip_user_files_dir {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.ip_user_files} -ipstatic_source_dir {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.cache/compile_simlib/modelsim} {questa=D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.cache/compile_simlib/questa} {riviera=D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.cache/compile_simlib/riviera} {activehdl=D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips_wrapper_behav.wcfg}
+source mips_wrapper.tcl
+add_force {/mips_wrapper/mips_i/in_clock} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+current_wave_config {mips_wrapper_behav.wcfg}
+add_wave {{/mips_wrapper/mips_i/HDU_0}} 
+relaunch_sim
+add_force {/mips_wrapper/mips_i/in_clock} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+open_bd_design {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}
+open_bd_design {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}
+current_wave_config {mips_wrapper_behav.wcfg}
+add_wave {{/mips_wrapper/mips_i/controlLogic_0}} 
+relaunch_sim
+add_force {/mips_wrapper/mips_i/in_clock} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+open_bd_design {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}
+disconnect_bd_net /ID_EX_Q10 [get_bd_pins HDU_0/ID_EX_MemtoReg]
+undo
+disconnect_bd_net /ID_EX_Q10 [get_bd_pins HDU_0/ID_EX_MemtoReg]
+connect_bd_net [get_bd_pins IF_ID/Q8] [get_bd_pins HDU_0/ID_EX_MemtoReg]
+save_bd_design
+close_sim
+generate_target Simulation [get_files {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}]
+export_ip_user_files -of_objects [get_files {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}}] -directory {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.ip_user_files/sim_scripts} -ip_user_files_dir {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.ip_user_files} -ipstatic_source_dir {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.cache/compile_simlib/modelsim} {questa=D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.cache/compile_simlib/questa} {riviera=D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.cache/compile_simlib/riviera} {activehdl=D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips_wrapper_behav.wcfg}
+source mips_wrapper.tcl
+add_force {/mips_wrapper/mips_i/in_clock} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+open_bd_design {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}
+copy_bd_objs /  [get_bd_cells {instructionSlice}]
+connect_bd_net [get_bd_pins instructionMemory_0/instruction] [get_bd_pins instructionSlice1/Din]
+disconnect_bd_net /xlslice_0_Dout [get_bd_pins HDU_0/IF_ID_RegisterRs]
+startgroup
+connect_bd_net [get_bd_pins instructionSlice1/Dout] [get_bd_pins HDU_0/IF_ID_RegisterRs]
+endgroup
+disconnect_bd_net /xlslice_1_Dout [get_bd_pins HDU_0/IF_ID_RegisterRt]
+startgroup
+connect_bd_net [get_bd_pins instructionSlice1/Dout1] [get_bd_pins HDU_0/IF_ID_RegisterRt]
+endgroup
+disconnect_bd_net /ID_EX_Q4 [get_bd_pins HDU_0/ID_EX_RegisterRt]
+connect_bd_net [get_bd_pins HDU_0/ID_EX_RegisterRt] [get_bd_pins instructionSlice/Dout1]
+save_bd_design
+save_wave_config {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips_wrapper_behav.wcfg}
+close_sim
+generate_target Simulation [get_files {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}]
+export_ip_user_files -of_objects [get_files {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}}] -directory {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.ip_user_files/sim_scripts} -ip_user_files_dir {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.ip_user_files} -ipstatic_source_dir {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.cache/compile_simlib/modelsim} {questa=D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.cache/compile_simlib/questa} {riviera=D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.cache/compile_simlib/riviera} {activehdl=D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips_wrapper_behav.wcfg}
+source mips_wrapper.tcl
+add_force {/mips_wrapper/mips_i/in_clock} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+open_bd_design {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}
+delete_bd_objs [get_bd_nets instructionSlice1_Dout]
+delete_bd_objs [get_bd_nets instructionSlice1_Dout1]
+disconnect_bd_net /instructionMemory_0_instruction [get_bd_pins instructionSlice1/Din]
+delete_bd_objs [get_bd_cells instructionSlice1]
+connect_bd_net [get_bd_pins HDU_0/IF_ID_RegisterRs] [get_bd_pins instructionSlice/Dout]
+connect_bd_net [get_bd_pins HDU_0/IF_ID_RegisterRt] [get_bd_pins instructionSlice/Dout1]
+disconnect_bd_net /D10_1 [get_bd_pins HDU_0/ID_EX_MemtoReg]
+connect_bd_net [get_bd_pins ID_EX/Q10] [get_bd_pins HDU_0/ID_EX_MemtoReg]
+disconnect_bd_net /xlslice_1_Dout [get_bd_pins HDU_0/ID_EX_RegisterRt]
+connect_bd_net [get_bd_pins ID_EX/Q4] [get_bd_pins HDU_0/ID_EX_RegisterRt]
+save_bd_design
+relaunch_sim
+add_force {/mips_wrapper/mips_i/in_clock} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+current_wave_config {mips_wrapper_behav.wcfg}
+add_wave {{/mips_wrapper/mips_i/instructionSlice}} 
+relaunch_sim
+add_force {/mips_wrapper/mips_i/in_clock} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+current_wave_config {mips_wrapper_behav.wcfg}
+add_wave {{/mips_wrapper/mips_i/regFileFW_0}} 
+relaunch_sim
+add_force {/mips_wrapper/mips_i/in_clock} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+current_wave_config {mips_wrapper_behav.wcfg}
+add_wave {{/mips_wrapper/mips_i/HDU_0}} 
+relaunch_sim
+add_force {/mips_wrapper/mips_i/in_clock} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+save_wave_config {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips_wrapper_behav.wcfg}
+add_bp {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/new/dataMemory.v} 35
+remove_bps -file {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/new/dataMemory.v} -line 35
+save_wave_config {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips_wrapper_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips_wrapper_behav.wcfg}
+source mips_wrapper.tcl
+add_force {/mips_wrapper/mips_i/RegFile_0/i_clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+open_bd_design {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}
+update_module_reference mips_dataMemory_0_0
+regenerate_bd_layout
+regenerate_bd_layout
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+current_wave_config {mips_wrapper_behav.wcfg}
+add_wave {{/mips_wrapper/mips_i/ControlMUX}} 
+relaunch_sim
+add_force {/mips_wrapper/mips_i/RegFile_0/i_clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+open_bd_design {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}
+open_bd_design {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}
+open_bd_design {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}
+open_bd_design {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}
+update_module_reference {mips_pipeline_0_0 mips_pipeline_0_1 mips_pipeline_0_2 mips_pipeline_0_5 mips_pipeline_10_0 mips_pipeline_11_0 mips_pipeline_12_0 mips_pipeline_13_0 mips_pipeline_1_0 mips_pipeline_1_1 mips_pipeline_1_2 mips_pipeline_1_3 mips_pipeline_2_0 mips_pipeline_2_1 mips_pipeline_2_2 mips_pipeline_2_3 mips_pipeline_3_0 mips_pipeline_3_1 mips_pipeline_3_2 mips_pipeline_3_3 mips_pipeline_4_0 mips_pipeline_4_1 mips_pipeline_4_2 mips_pipeline_4_3 mips_pipeline_5_0 mips_pipeline_5_1 mips_pipeline_6_0 mips_pipeline_6_1 mips_pipeline_7_0 mips_pipeline_7_1 mips_pipeline_8_1 mips_pipeline_8_2 mips_pipeline_9_0 mips_pipeline_9_1}
+open_bd_design {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 ID_EX/xlconstant_0
+endgroup
+connect_bd_net [get_bd_pins ID_EX/xlconstant_0/dout] [get_bd_pins ID_EX/pipeline_0/En]
+connect_bd_net [get_bd_pins ID_EX/pipeline_2/En] [get_bd_pins ID_EX/xlconstant_0/dout]
+connect_bd_net [get_bd_pins ID_EX/pipeline_3/En] [get_bd_pins ID_EX/xlconstant_0/dout]
+connect_bd_net [get_bd_pins ID_EX/pipeline_1/En] [get_bd_pins ID_EX/xlconstant_0/dout]
+connect_bd_net [get_bd_pins ID_EX/pipeline_5/En] [get_bd_pins ID_EX/xlconstant_0/dout]
+connect_bd_net [get_bd_pins ID_EX/pipeline_6/En] [get_bd_pins ID_EX/xlconstant_0/dout]
+connect_bd_net [get_bd_pins ID_EX/pipeline_7/En] [get_bd_pins ID_EX/xlconstant_0/dout]
+connect_bd_net [get_bd_pins ID_EX/pipeline_9/En] [get_bd_pins ID_EX/xlconstant_0/dout]
+connect_bd_net [get_bd_pins ID_EX/pipeline_10/En] [get_bd_pins ID_EX/xlconstant_0/dout]
+connect_bd_net [get_bd_pins ID_EX/pipeline_11/En] [get_bd_pins ID_EX/xlconstant_0/dout]
+connect_bd_net [get_bd_pins ID_EX/pipeline_4/En] [get_bd_pins ID_EX/xlconstant_0/dout]
+connect_bd_net [get_bd_pins ID_EX/pipeline_8/En] [get_bd_pins ID_EX/xlconstant_0/dout]
+connect_bd_net [get_bd_pins ID_EX/pipeline_12/En] [get_bd_pins ID_EX/xlconstant_0/dout]
+connect_bd_net [get_bd_pins ID_EX/pipeline_13/En] [get_bd_pins ID_EX/xlconstant_0/dout]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 EX_MEM/xlconstant_0
+endgroup
+connect_bd_net [get_bd_pins EX_MEM/xlconstant_0/dout] [get_bd_pins EX_MEM/pipeline_0/En]
+connect_bd_net [get_bd_pins EX_MEM/pipeline_1/En] [get_bd_pins EX_MEM/xlconstant_0/dout]
+connect_bd_net [get_bd_pins EX_MEM/pipeline_3/En] [get_bd_pins EX_MEM/xlconstant_0/dout]
+connect_bd_net [get_bd_pins EX_MEM/pipeline_4/En] [get_bd_pins EX_MEM/xlconstant_0/dout]
+connect_bd_net [get_bd_pins EX_MEM/pipeline_5/En] [get_bd_pins EX_MEM/xlconstant_0/dout]
+connect_bd_net [get_bd_pins EX_MEM/pipeline_2/En] [get_bd_pins EX_MEM/xlconstant_0/dout]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 MEM_WB/xlconstant_0
+endgroup
+connect_bd_net [get_bd_pins MEM_WB/xlconstant_0/dout] [get_bd_pins MEM_WB/pipeline_0/En]
+connect_bd_net [get_bd_pins MEM_WB/pipeline_1/En] [get_bd_pins MEM_WB/xlconstant_0/dout]
+connect_bd_net [get_bd_pins MEM_WB/pipeline_2/En] [get_bd_pins MEM_WB/xlconstant_0/dout]
+connect_bd_net [get_bd_pins MEM_WB/pipeline_3/En] [get_bd_pins MEM_WB/xlconstant_0/dout]
+connect_bd_net [get_bd_pins MEM_WB/pipeline_4/En] [get_bd_pins MEM_WB/xlconstant_0/dout]
+delete_bd_objs [get_bd_nets clkEn_0_CLKout]
+connect_bd_net [get_bd_ports in_clock] [get_bd_pins IF_ID/in_clock]
+connect_bd_net [get_bd_pins HDU_0/IF_ID_Write] [get_bd_pins IF_ID/pipeline_0/En]
+disconnect_bd_net /HDU_0_IF_ID_Write [get_bd_pins clkEn_0/En]
+disconnect_bd_net /i_clk_0_1 [get_bd_pins clkEn_0/clk]
+delete_bd_objs [get_bd_cells clkEn_0]
+connect_bd_net [get_bd_pins IF_ID/En] [get_bd_pins IF_ID/pipeline_1/En]
+connect_bd_net [get_bd_pins IF_ID/En] [get_bd_pins IF_ID/pipeline_2/En]
+connect_bd_net [get_bd_pins IF_ID/En] [get_bd_pins IF_ID/pipeline_3/En]
+connect_bd_net [get_bd_pins IF_ID/En] [get_bd_pins IF_ID/pipeline_4/En]
+connect_bd_net [get_bd_pins IF_ID/En] [get_bd_pins IF_ID/pipeline_6/En]
+connect_bd_net [get_bd_pins IF_ID/En] [get_bd_pins IF_ID/pipeline_7/En]
+connect_bd_net [get_bd_pins IF_ID/En] [get_bd_pins IF_ID/pipeline_8/En]
+connect_bd_net [get_bd_pins IF_ID/En] [get_bd_pins IF_ID/pipeline_9/En]
+update_compile_order -fileset sources_1
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+save_wave_config {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips_wrapper_behav.wcfg}
+close_sim
+generate_target Simulation [get_files {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}]
+export_ip_user_files -of_objects [get_files {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}}] -directory {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.ip_user_files/sim_scripts} -ip_user_files_dir {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.ip_user_files} -ipstatic_source_dir {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.cache/compile_simlib/modelsim} {questa=D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.cache/compile_simlib/questa} {riviera=D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.cache/compile_simlib/riviera} {activehdl=D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips_wrapper_behav.wcfg}
+source mips_wrapper.tcl
+add_force {/mips_wrapper/mips_i/RegFile_0/i_clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+save_wave_config {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips_wrapper_behav.wcfg}
+save_wave_config {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips_wrapper_behav.wcfg}
+open_bd_design {D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/bd/mips/mips.bd}
+close_sim

@@ -1,0 +1,64 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.595902",
+   "Default View_TopLeft":"-1418,-10",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port in_clock -pg 1 -lvl 0 -x -10 -y 690 -defaultsOSRD
+preplace portBus D -pg 1 -lvl 0 -x -10 -y 310 -defaultsOSRD
+preplace portBus Q -pg 1 -lvl 2 -x 260 -y 300 -defaultsOSRD
+preplace portBus D1 -pg 1 -lvl 0 -x -10 -y 70 -defaultsOSRD
+preplace portBus Q1 -pg 1 -lvl 2 -x 260 -y 60 -defaultsOSRD
+preplace portBus D2 -pg 1 -lvl 0 -x -10 -y 190 -defaultsOSRD
+preplace portBus Q2 -pg 1 -lvl 2 -x 260 -y 180 -defaultsOSRD
+preplace portBus D3 -pg 1 -lvl 0 -x -10 -y 430 -defaultsOSRD
+preplace portBus Q3 -pg 1 -lvl 2 -x 260 -y 420 -defaultsOSRD
+preplace portBus D4 -pg 1 -lvl 0 -x -10 -y 550 -defaultsOSRD
+preplace portBus Q4 -pg 1 -lvl 2 -x 260 -y 540 -defaultsOSRD
+preplace portBus D5 -pg 1 -lvl 0 -x -10 -y 660 -defaultsOSRD
+preplace portBus Q5 -pg 1 -lvl 2 -x 260 -y 660 -defaultsOSRD
+preplace portBus D6 -pg 1 -lvl 0 -x -10 -y 790 -defaultsOSRD
+preplace portBus Q6 -pg 1 -lvl 2 -x 260 -y 780 -defaultsOSRD
+preplace portBus D7 -pg 1 -lvl 0 -x -10 -y 910 -defaultsOSRD
+preplace portBus Q7 -pg 1 -lvl 2 -x 260 -y 900 -defaultsOSRD
+preplace portBus D8 -pg 1 -lvl 0 -x -10 -y 1150 -defaultsOSRD
+preplace portBus Q8 -pg 1 -lvl 2 -x 260 -y 1140 -defaultsOSRD
+preplace portBus D9 -pg 1 -lvl 0 -x -10 -y 1030 -defaultsOSRD
+preplace portBus Q9 -pg 1 -lvl 2 -x 260 -y 1020 -defaultsOSRD
+preplace inst pipeline_0 -pg 1 -lvl 1 -x 130 -y 300 -defaultsOSRD
+preplace inst pipeline_2 -pg 1 -lvl 1 -x 130 -y 60 -defaultsOSRD
+preplace inst pipeline_3 -pg 1 -lvl 1 -x 130 -y 180 -defaultsOSRD
+preplace inst pipeline_1 -pg 1 -lvl 1 -x 130 -y 420 -defaultsOSRD
+preplace inst pipeline_4 -pg 1 -lvl 1 -x 130 -y 540 -defaultsOSRD
+preplace inst pipeline_5 -pg 1 -lvl 1 -x 130 -y 660 -defaultsOSRD
+preplace inst pipeline_6 -pg 1 -lvl 1 -x 130 -y 780 -defaultsOSRD
+preplace inst pipeline_7 -pg 1 -lvl 1 -x 130 -y 900 -defaultsOSRD
+preplace inst pipeline_8 -pg 1 -lvl 1 -x 130 -y 1140 -defaultsOSRD
+preplace inst pipeline_9 -pg 1 -lvl 1 -x 130 -y 1020 -defaultsOSRD
+preplace netloc i_clk_0_1 1 0 1 20 50n
+preplace netloc RegFile_0_regRdData1 1 0 1 NJ 310
+preplace netloc pipeline_0_Q1 1 1 1 NJ 300
+preplace netloc signExtern_0_outData 1 0 1 NJ 70
+preplace netloc pipeline_2_Q 1 1 1 NJ 60
+preplace netloc pipeline_1_Q 1 0 1 NJ 190
+preplace netloc pipeline_3_Q 1 1 1 NJ 180
+preplace netloc RegFile_0_regRdData2 1 0 1 NJ 430
+preplace netloc pipeline_1_Q1 1 1 1 NJ 420
+preplace netloc D4_1 1 0 1 NJ 550
+preplace netloc pipeline_4_Q 1 1 1 NJ 540
+preplace netloc D5_1 1 0 1 10J 660n
+preplace netloc pipeline_5_Q 1 1 1 NJ 660
+preplace netloc D6_1 1 0 1 NJ 790
+preplace netloc pipeline_6_Q 1 1 1 NJ 780
+preplace netloc D7_1 1 0 1 NJ 910
+preplace netloc pipeline_7_Q 1 1 1 NJ 900
+preplace netloc D8_1 1 0 1 NJ 1150
+preplace netloc pipeline_8_Q 1 1 1 NJ 1140
+preplace netloc D9_1 1 0 1 NJ 1030
+preplace netloc pipeline_9_Q 1 1 1 N 1020
+levelinfo -pg 1 -10 130 260
+pagesize -pg 1 -db -bbox -sgen -120 -10 370 1210
+"
+}
+

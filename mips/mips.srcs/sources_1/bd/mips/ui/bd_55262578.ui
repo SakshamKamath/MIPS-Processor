@@ -1,0 +1,79 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.968043",
+   "Default View_TopLeft":"-375,442",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port in_clock -pg 1 -lvl 0 -x -20 -y 690 -defaultsOSRD
+preplace portBus D -pg 1 -lvl 0 -x -20 -y 310 -defaultsOSRD
+preplace portBus Q -pg 1 -lvl 3 -x 610 -y 300 -defaultsOSRD
+preplace portBus D1 -pg 1 -lvl 0 -x -20 -y 70 -defaultsOSRD
+preplace portBus Q1 -pg 1 -lvl 3 -x 610 -y 60 -defaultsOSRD
+preplace portBus D2 -pg 1 -lvl 0 -x -20 -y 190 -defaultsOSRD
+preplace portBus Q2 -pg 1 -lvl 3 -x 610 -y 180 -defaultsOSRD
+preplace portBus D3 -pg 1 -lvl 0 -x -20 -y 430 -defaultsOSRD
+preplace portBus Q3 -pg 1 -lvl 3 -x 610 -y 420 -defaultsOSRD
+preplace portBus D5 -pg 1 -lvl 0 -x -20 -y 660 -defaultsOSRD
+preplace portBus Q5 -pg 1 -lvl 3 -x 610 -y 660 -defaultsOSRD
+preplace portBus D6 -pg 1 -lvl 0 -x -20 -y 790 -defaultsOSRD
+preplace portBus Q6 -pg 1 -lvl 3 -x 610 -y 780 -defaultsOSRD
+preplace portBus D7 -pg 1 -lvl 0 -x -20 -y 910 -defaultsOSRD
+preplace portBus Q7 -pg 1 -lvl 3 -x 610 -y 900 -defaultsOSRD
+preplace portBus D9 -pg 1 -lvl 0 -x -20 -y 1030 -defaultsOSRD
+preplace portBus Q9 -pg 1 -lvl 3 -x 610 -y 1020 -defaultsOSRD
+preplace portBus D10 -pg 1 -lvl 0 -x -20 -y 400 -defaultsOSRD
+preplace portBus Q10 -pg 1 -lvl 3 -x 610 -y 390 -defaultsOSRD
+preplace portBus Q11 -pg 1 -lvl 3 -x 610 -y 630 -defaultsOSRD
+preplace portBus D11 -pg 1 -lvl 0 -x -20 -y 630 -defaultsOSRD
+preplace portBus D4 -pg 1 -lvl 0 -x -20 -y 1220 -defaultsOSRD
+preplace portBus D8 -pg 1 -lvl 0 -x -20 -y 1190 -defaultsOSRD
+preplace portBus D12 -pg 1 -lvl 0 -x -20 -y -40 -defaultsOSRD
+preplace portBus Q4 -pg 1 -lvl 3 -x 610 -y 230 -defaultsOSRD
+preplace portBus Q8 -pg 1 -lvl 3 -x 610 -y 90 -defaultsOSRD
+preplace portBus Q12 -pg 1 -lvl 3 -x 610 -y -50 -defaultsOSRD
+preplace inst pipeline_0 -pg 1 -lvl 1 -x 190 -y 300 -defaultsOSRD
+preplace inst pipeline_2 -pg 1 -lvl 1 -x 190 -y 60 -defaultsOSRD
+preplace inst pipeline_3 -pg 1 -lvl 1 -x 190 -y 180 -defaultsOSRD
+preplace inst pipeline_1 -pg 1 -lvl 1 -x 190 -y 540 -defaultsOSRD
+preplace inst pipeline_5 -pg 1 -lvl 1 -x 190 -y 780 -defaultsOSRD
+preplace inst pipeline_6 -pg 1 -lvl 1 -x 190 -y 900 -defaultsOSRD
+preplace inst pipeline_7 -pg 1 -lvl 1 -x 190 -y 1020 -defaultsOSRD
+preplace inst pipeline_9 -pg 1 -lvl 1 -x 190 -y 1140 -defaultsOSRD
+preplace inst pipeline_10 -pg 1 -lvl 1 -x 190 -y 420 -defaultsOSRD
+preplace inst pipeline_11 -pg 1 -lvl 1 -x 190 -y 660 -defaultsOSRD
+preplace inst pipeline_4 -pg 1 -lvl 2 -x 450 -y 230 -defaultsOSRD
+preplace inst pipeline_8 -pg 1 -lvl 2 -x 450 -y 90 -defaultsOSRD
+preplace inst pipeline_12 -pg 1 -lvl 2 -x 450 -y -50 -defaultsOSRD
+preplace netloc i_clk_0_1 1 0 2 60 -50 330
+preplace netloc RegFile_0_regRdData1 1 0 1 NJ 310
+preplace netloc pipeline_0_Q1 1 1 2 NJ 300 N
+preplace netloc signExtern_0_outData 1 0 1 NJ 70
+preplace netloc pipeline_2_Q 1 1 2 300J 20 550
+preplace netloc pipeline_1_Q 1 0 1 NJ 190
+preplace netloc pipeline_3_Q 1 1 2 320J 160 550
+preplace netloc RegFile_0_regRdData2 1 0 1 70J 430n
+preplace netloc pipeline_1_Q1 1 1 2 NJ 540 550
+preplace netloc D5_1 1 0 1 30J 660n
+preplace netloc pipeline_5_Q 1 1 2 NJ 780 550
+preplace netloc D6_1 1 0 1 20J 790n
+preplace netloc pipeline_6_Q 1 1 2 NJ 900 560
+preplace netloc D7_1 1 0 1 10J 910n
+preplace netloc pipeline_7_Q 1 1 2 NJ 1020 570
+preplace netloc D9_1 1 0 1 0J 1030n
+preplace netloc pipeline_9_Q 1 1 2 N 1140 580
+preplace netloc D10_1 1 0 1 80 400n
+preplace netloc pipeline_10_Q 1 1 2 310 390 N
+preplace netloc pipeline_11_Q 1 1 2 320 630 N
+preplace netloc D11_1 1 0 1 80 630n
+preplace netloc D4_1 1 0 2 40J -20 310J
+preplace netloc D8_1 1 0 2 50J -10 320J
+preplace netloc D12_1 1 0 2 NJ -40 NJ
+preplace netloc pipeline_4_Q 1 2 1 N 230
+preplace netloc pipeline_8_Q 1 2 1 N 90
+preplace netloc pipeline_12_Q 1 2 1 N -50
+levelinfo -pg 1 -20 190 450 610
+pagesize -pg 1 -db -bbox -sgen -130 -120 720 1330
+"
+}
+0

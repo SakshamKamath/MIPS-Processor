@@ -1,0 +1,17 @@
+`define bne   'b000101
+
+module HDU(
+input [31:0] instruction,
+input ID_EX_PCSrc,
+output IF_ID_Write.
+output PCWrite
+);
+
+wire [5:0] opCode;
+wire HZD;
+
+assign opCode = instruction[31:26];
+assign HZD = (opCode == `bne);
+assign PCWrite = ~HZD | ID_EX_PCSrc;
+assign IF_ID_Write = ~ID_EX_PCSrc;
+endmodule

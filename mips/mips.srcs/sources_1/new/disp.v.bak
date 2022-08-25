@@ -1,0 +1,2 @@
+module disp(
+input [2:0] count,

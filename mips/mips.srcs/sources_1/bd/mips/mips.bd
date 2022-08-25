@@ -1,0 +1,4182 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x9278B93A56C94B9A",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../mips.gen/sources_1/bd/mips",
+      "name": "mips",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2"
+    },
+    "design_tree": {
+      "mux_1": "",
+      "mux_2": "",
+      "shiftLeft_0": "",
+      "mux_3": "",
+      "RegFile_0": "",
+      "alu_0": "",
+      "mux_4": "",
+      "mux_0": "",
+      "IF_ID": {
+        "pipeline_0": "",
+        "pipeline_1": "",
+        "pipeline_2": "",
+        "pipeline_3": "",
+        "pipeline_4": "",
+        "pipeline_6": "",
+        "pipeline_7": "",
+        "pipeline_8": "",
+        "pipeline_9": ""
+      },
+      "adder_1": "",
+      "ID_EX": {
+        "pipeline_0": "",
+        "pipeline_10": "",
+        "pipeline_11": "",
+        "pipeline_12": "",
+        "pipeline_13": "",
+        "pipeline_1": "",
+        "pipeline_2": "",
+        "pipeline_3": "",
+        "pipeline_4": "",
+        "pipeline_5": "",
+        "pipeline_6": "",
+        "pipeline_7": "",
+        "pipeline_8": "",
+        "pipeline_9": "",
+        "xlconstant_0": ""
+      },
+      "EX_MEM": {
+        "pipeline_0": "",
+        "pipeline_1": "",
+        "pipeline_2": "",
+        "pipeline_3": "",
+        "pipeline_4": "",
+        "pipeline_5": "",
+        "xlconstant_0": ""
+      },
+      "Jump_Block": {
+        "concat_0": "",
+        "xlslice_5": "",
+        "xlslice_4": ""
+      },
+      "MEM_WB": {
+        "pipeline_0": "",
+        "pipeline_1": "",
+        "pipeline_2": "",
+        "pipeline_3": "",
+        "pipeline_4": "",
+        "xlconstant_0": ""
+      },
+      "slice_and_Extend": {
+        "xlslice_3": "",
+        "signExtern_0": ""
+      },
+      "instructionSlice": {
+        "xlslice_0": "",
+        "xlslice_1": "",
+        "xlslice_2": ""
+      },
+      "PCplus4Adder": {
+        "adder_0": "",
+        "constantFour": ""
+      },
+      "andGate_0": "",
+      "programCounter_0": "",
+      "dataMemory_0": "",
+      "controlLogic_0": "",
+      "DataHazardUnit": {
+        "regFileFW_0": "",
+        "mux2_1": "",
+        "mux2_0": "",
+        "FU_0": ""
+      },
+      "ctrlHDU_0": "",
+      "instructionMemory_0": ""
+    },
+    "ports": {
+      "in_clock": {
+        "type": "clk",
+        "direction": "I"
+      }
+    },
+    "components": {
+      "mux_1": {
+        "vlnv": "xilinx.com:module_ref:mux:1.0",
+        "xci_name": "mips_mux_1_0",
+        "xci_path": "ip\\mips_mux_1_0\\mips_mux_1_0.xci",
+        "inst_hier_path": "mux_1",
+        "parameters": {
+          "width": {
+            "value": "32"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in0": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "in1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "ctrl": {
+            "direction": "I"
+          },
+          "muxOut": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "mux_2": {
+        "vlnv": "xilinx.com:module_ref:mux:1.0",
+        "xci_name": "mips_mux_2_0",
+        "xci_path": "ip\\mips_mux_2_0\\mips_mux_2_0.xci",
+        "inst_hier_path": "mux_2",
+        "parameters": {
+          "width": {
+            "value": "32"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in0": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "in1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "ctrl": {
+            "direction": "I"
+          },
+          "muxOut": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "shiftLeft_0": {
+        "vlnv": "xilinx.com:module_ref:shiftLeft:1.0",
+        "xci_name": "mips_shiftLeft_0_0",
+        "xci_path": "ip\\mips_shiftLeft_0_0\\mips_shiftLeft_0_0.xci",
+        "inst_hier_path": "shiftLeft_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "shiftLeft",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "inData": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "outData": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "mux_3": {
+        "vlnv": "xilinx.com:module_ref:mux:1.0",
+        "xci_name": "mips_mux_3_0",
+        "xci_path": "ip\\mips_mux_3_0\\mips_mux_3_0.xci",
+        "inst_hier_path": "mux_3",
+        "parameters": {
+          "width": {
+            "value": "32"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in0": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "in1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "ctrl": {
+            "direction": "I"
+          },
+          "muxOut": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "RegFile_0": {
+        "vlnv": "xilinx.com:module_ref:RegFile:1.0",
+        "xci_name": "mips_RegFile_0_0",
+        "xci_path": "ip\\mips_RegFile_0_0\\mips_RegFile_0_0.xci",
+        "inst_hier_path": "RegFile_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "RegFile",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "mips_in_clock",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "regRdAddr1": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "regRdAddr2": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "regWrAddr": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "regWrData": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "regWrEn": {
+            "direction": "I"
+          },
+          "regRdData1": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "regRdData2": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "alu_0": {
+        "vlnv": "xilinx.com:module_ref:alu:1.0",
+        "xci_name": "mips_alu_0_0",
+        "xci_path": "ip\\mips_alu_0_0\\mips_alu_0_0.xci",
+        "inst_hier_path": "alu_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "alu",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "op1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "op2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "aluOp": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "aluOut": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "zeroFlag": {
+            "direction": "O"
+          }
+        }
+      },
+      "mux_4": {
+        "vlnv": "xilinx.com:module_ref:mux:1.0",
+        "xci_name": "mips_mux_0_1",
+        "xci_path": "ip\\mips_mux_0_1\\mips_mux_0_1.xci",
+        "inst_hier_path": "mux_4",
+        "parameters": {
+          "width": {
+            "value": "32"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in0": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "in1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "ctrl": {
+            "direction": "I"
+          },
+          "muxOut": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "mux_0": {
+        "vlnv": "xilinx.com:module_ref:mux:1.0",
+        "xci_name": "mips_mux_0_0",
+        "xci_path": "ip\\mips_mux_0_0\\mips_mux_0_0.xci",
+        "inst_hier_path": "mux_0",
+        "parameters": {
+          "width": {
+            "value": "5"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in0": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "in1": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "ctrl": {
+            "direction": "I"
+          },
+          "muxOut": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          }
+        }
+      },
+      "IF_ID": {
+        "ports": {
+          "in_clock": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "instruction": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "D": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Q1": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "Q2": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "D1": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "Q3": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "D2": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "Q4": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "D3": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "Q6": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "D5": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "D6": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "Q7": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "D7": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "Q8": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "Q9": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "D8": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "En": {
+            "direction": "I"
+          }
+        },
+        "components": {
+          "pipeline_0": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_0_0",
+            "xci_path": "ip\\mips_pipeline_0_0\\mips_pipeline_0_0.xci",
+            "inst_hier_path": "IF_ID/pipeline_0",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_1": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_1_0",
+            "xci_path": "ip\\mips_pipeline_1_0\\mips_pipeline_1_0.xci",
+            "inst_hier_path": "IF_ID/pipeline_1",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_2": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_2_2",
+            "xci_path": "ip\\mips_pipeline_2_2\\mips_pipeline_2_2.xci",
+            "inst_hier_path": "IF_ID/pipeline_2",
+            "parameters": {
+              "width": {
+                "value": "1"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_3": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_3_3",
+            "xci_path": "ip\\mips_pipeline_3_3\\mips_pipeline_3_3.xci",
+            "inst_hier_path": "IF_ID/pipeline_3",
+            "parameters": {
+              "width": {
+                "value": "1"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_4": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_4_1",
+            "xci_path": "ip\\mips_pipeline_4_1\\mips_pipeline_4_1.xci",
+            "inst_hier_path": "IF_ID/pipeline_4",
+            "parameters": {
+              "width": {
+                "value": "1"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_6": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_6_1",
+            "xci_path": "ip\\mips_pipeline_6_1\\mips_pipeline_6_1.xci",
+            "inst_hier_path": "IF_ID/pipeline_6",
+            "parameters": {
+              "width": {
+                "value": "3"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "2",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "2",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_7": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_7_1",
+            "xci_path": "ip\\mips_pipeline_7_1\\mips_pipeline_7_1.xci",
+            "inst_hier_path": "IF_ID/pipeline_7",
+            "parameters": {
+              "width": {
+                "value": "1"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_8": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_8_1",
+            "xci_path": "ip\\mips_pipeline_8_1\\mips_pipeline_8_1.xci",
+            "inst_hier_path": "IF_ID/pipeline_8",
+            "parameters": {
+              "width": {
+                "value": "1"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_9": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_9_1",
+            "xci_path": "ip\\mips_pipeline_9_1\\mips_pipeline_9_1.xci",
+            "inst_hier_path": "IF_ID/pipeline_9",
+            "parameters": {
+              "width": {
+                "value": "1"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              }
+            }
+          }
+        },
+        "nets": {
+          "i_clk_0_1": {
+            "ports": [
+              "in_clock",
+              "pipeline_0/clk",
+              "pipeline_1/clk",
+              "pipeline_2/clk",
+              "pipeline_3/clk",
+              "pipeline_4/clk",
+              "pipeline_6/clk",
+              "pipeline_7/clk",
+              "pipeline_8/clk",
+              "pipeline_9/clk"
+            ]
+          },
+          "instructionMemory_0_instruction": {
+            "ports": [
+              "instruction",
+              "pipeline_0/D"
+            ]
+          },
+          "pipeline_0_Q": {
+            "ports": [
+              "pipeline_0/Q",
+              "Q"
+            ]
+          },
+          "adder_0_adderOut": {
+            "ports": [
+              "D",
+              "pipeline_1/D"
+            ]
+          },
+          "pipeline_1_Q": {
+            "ports": [
+              "pipeline_1/Q",
+              "Q1"
+            ]
+          },
+          "pipeline_2_Q": {
+            "ports": [
+              "pipeline_2/Q",
+              "Q2"
+            ]
+          },
+          "D1_1": {
+            "ports": [
+              "D1",
+              "pipeline_2/D"
+            ]
+          },
+          "pipeline_3_Q": {
+            "ports": [
+              "pipeline_3/Q",
+              "Q3"
+            ]
+          },
+          "D2_1": {
+            "ports": [
+              "D2",
+              "pipeline_3/D"
+            ]
+          },
+          "pipeline_4_Q": {
+            "ports": [
+              "pipeline_4/Q",
+              "Q4"
+            ]
+          },
+          "D3_1": {
+            "ports": [
+              "D3",
+              "pipeline_4/D"
+            ]
+          },
+          "pipeline_6_Q": {
+            "ports": [
+              "pipeline_6/Q",
+              "Q6"
+            ]
+          },
+          "D5_1": {
+            "ports": [
+              "D5",
+              "pipeline_6/D"
+            ]
+          },
+          "D6_1": {
+            "ports": [
+              "D6",
+              "pipeline_7/D"
+            ]
+          },
+          "pipeline_7_Q": {
+            "ports": [
+              "pipeline_7/Q",
+              "Q7"
+            ]
+          },
+          "D7_1": {
+            "ports": [
+              "D7",
+              "pipeline_8/D"
+            ]
+          },
+          "pipeline_8_Q": {
+            "ports": [
+              "pipeline_8/Q",
+              "Q8"
+            ]
+          },
+          "pipeline_9_Q": {
+            "ports": [
+              "pipeline_9/Q",
+              "Q9"
+            ]
+          },
+          "D8_1": {
+            "ports": [
+              "D8",
+              "pipeline_9/D"
+            ]
+          },
+          "En_1": {
+            "ports": [
+              "En",
+              "pipeline_0/En",
+              "pipeline_1/En",
+              "pipeline_2/En",
+              "pipeline_3/En",
+              "pipeline_4/En",
+              "pipeline_6/En",
+              "pipeline_7/En",
+              "pipeline_8/En",
+              "pipeline_9/En"
+            ]
+          }
+        }
+      },
+      "adder_1": {
+        "vlnv": "xilinx.com:module_ref:adder:1.0",
+        "xci_name": "mips_adder_1_0",
+        "xci_path": "ip\\mips_adder_1_0\\mips_adder_1_0.xci",
+        "inst_hier_path": "adder_1",
+        "parameters": {
+          "width": {
+            "value": "32"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "adder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "op1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "op2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "adderOut": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "ID_EX": {
+        "ports": {
+          "in_clock": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "D1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Q1": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "D2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Q2": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "D3": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Q3": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "D5": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "Q5": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "D6": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "Q6": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "D7": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "Q7": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "D9": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "Q9": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "D10": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "Q10": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "Q11": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "D11": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "D4": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "D8": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "D12": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "Q4": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "Q8": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "Q12": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "D13": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "Q13": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          }
+        },
+        "components": {
+          "pipeline_0": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_0_1",
+            "xci_path": "ip\\mips_pipeline_0_1\\mips_pipeline_0_1.xci",
+            "inst_hier_path": "ID_EX/pipeline_0",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_10": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_10_0",
+            "xci_path": "ip\\mips_pipeline_10_0\\mips_pipeline_10_0.xci",
+            "inst_hier_path": "ID_EX/pipeline_10",
+            "parameters": {
+              "width": {
+                "value": "1"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_11": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_11_0",
+            "xci_path": "ip\\mips_pipeline_11_0\\mips_pipeline_11_0.xci",
+            "inst_hier_path": "ID_EX/pipeline_11",
+            "parameters": {
+              "width": {
+                "value": "1"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_12": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_12_0",
+            "xci_path": "ip\\mips_pipeline_12_0\\mips_pipeline_12_0.xci",
+            "inst_hier_path": "ID_EX/pipeline_12",
+            "parameters": {
+              "width": {
+                "value": "1"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_13": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_13_0",
+            "xci_path": "ip\\mips_pipeline_13_0\\mips_pipeline_13_0.xci",
+            "inst_hier_path": "ID_EX/pipeline_13",
+            "parameters": {
+              "width": {
+                "value": "5"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "4",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "4",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_1": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_1_1",
+            "xci_path": "ip\\mips_pipeline_1_1\\mips_pipeline_1_1.xci",
+            "inst_hier_path": "ID_EX/pipeline_1",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_2": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_2_0",
+            "xci_path": "ip\\mips_pipeline_2_0\\mips_pipeline_2_0.xci",
+            "inst_hier_path": "ID_EX/pipeline_2",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_3": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_3_0",
+            "xci_path": "ip\\mips_pipeline_3_0\\mips_pipeline_3_0.xci",
+            "inst_hier_path": "ID_EX/pipeline_3",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_4": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_4_2",
+            "xci_path": "ip\\mips_pipeline_4_2\\mips_pipeline_4_2.xci",
+            "inst_hier_path": "ID_EX/pipeline_4",
+            "parameters": {
+              "width": {
+                "value": "5"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "4",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "4",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_5": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_5_0",
+            "xci_path": "ip\\mips_pipeline_5_0\\mips_pipeline_5_0.xci",
+            "inst_hier_path": "ID_EX/pipeline_5",
+            "parameters": {
+              "width": {
+                "value": "1"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_6": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_6_0",
+            "xci_path": "ip\\mips_pipeline_6_0\\mips_pipeline_6_0.xci",
+            "inst_hier_path": "ID_EX/pipeline_6",
+            "parameters": {
+              "width": {
+                "value": "1"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_7": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_7_0",
+            "xci_path": "ip\\mips_pipeline_7_0\\mips_pipeline_7_0.xci",
+            "inst_hier_path": "ID_EX/pipeline_7",
+            "parameters": {
+              "width": {
+                "value": "3"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "2",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "2",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_8": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_8_2",
+            "xci_path": "ip\\mips_pipeline_8_2\\mips_pipeline_8_2.xci",
+            "inst_hier_path": "ID_EX/pipeline_8",
+            "parameters": {
+              "width": {
+                "value": "5"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "4",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "4",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_9": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_9_0",
+            "xci_path": "ip\\mips_pipeline_9_0\\mips_pipeline_9_0.xci",
+            "inst_hier_path": "ID_EX/pipeline_9",
+            "parameters": {
+              "width": {
+                "value": "1"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              }
+            }
+          },
+          "xlconstant_0": {
+            "vlnv": "xilinx.com:ip:xlconstant:1.1",
+            "xci_name": "mips_xlconstant_0_3",
+            "xci_path": "ip\\mips_xlconstant_0_3\\mips_xlconstant_0_3.xci",
+            "inst_hier_path": "ID_EX/xlconstant_0"
+          }
+        },
+        "nets": {
+          "i_clk_0_1": {
+            "ports": [
+              "in_clock",
+              "pipeline_0/clk",
+              "pipeline_10/clk",
+              "pipeline_11/clk",
+              "pipeline_12/clk",
+              "pipeline_13/clk",
+              "pipeline_1/clk",
+              "pipeline_2/clk",
+              "pipeline_3/clk",
+              "pipeline_4/clk",
+              "pipeline_5/clk",
+              "pipeline_6/clk",
+              "pipeline_7/clk",
+              "pipeline_8/clk",
+              "pipeline_9/clk"
+            ]
+          },
+          "RegFile_0_regRdData1": {
+            "ports": [
+              "D",
+              "pipeline_0/D"
+            ]
+          },
+          "pipeline_0_Q1": {
+            "ports": [
+              "pipeline_0/Q",
+              "Q"
+            ]
+          },
+          "signExtern_0_outData": {
+            "ports": [
+              "D1",
+              "pipeline_2/D"
+            ]
+          },
+          "pipeline_2_Q": {
+            "ports": [
+              "pipeline_2/Q",
+              "Q1"
+            ]
+          },
+          "pipeline_1_Q": {
+            "ports": [
+              "D2",
+              "pipeline_3/D"
+            ]
+          },
+          "pipeline_3_Q": {
+            "ports": [
+              "pipeline_3/Q",
+              "Q2"
+            ]
+          },
+          "RegFile_0_regRdData2": {
+            "ports": [
+              "D3",
+              "pipeline_1/D"
+            ]
+          },
+          "pipeline_1_Q1": {
+            "ports": [
+              "pipeline_1/Q",
+              "Q3"
+            ]
+          },
+          "D5_1": {
+            "ports": [
+              "D5",
+              "pipeline_5/D"
+            ]
+          },
+          "pipeline_5_Q": {
+            "ports": [
+              "pipeline_5/Q",
+              "Q5"
+            ]
+          },
+          "D6_1": {
+            "ports": [
+              "D6",
+              "pipeline_6/D"
+            ]
+          },
+          "pipeline_6_Q": {
+            "ports": [
+              "pipeline_6/Q",
+              "Q6"
+            ]
+          },
+          "D7_1": {
+            "ports": [
+              "D7",
+              "pipeline_7/D"
+            ]
+          },
+          "pipeline_7_Q": {
+            "ports": [
+              "pipeline_7/Q",
+              "Q7"
+            ]
+          },
+          "D9_1": {
+            "ports": [
+              "D9",
+              "pipeline_9/D"
+            ]
+          },
+          "pipeline_9_Q": {
+            "ports": [
+              "pipeline_9/Q",
+              "Q9"
+            ]
+          },
+          "D10_1": {
+            "ports": [
+              "D10",
+              "pipeline_10/D"
+            ]
+          },
+          "pipeline_10_Q": {
+            "ports": [
+              "pipeline_10/Q",
+              "Q10"
+            ]
+          },
+          "pipeline_11_Q": {
+            "ports": [
+              "pipeline_11/Q",
+              "Q11"
+            ]
+          },
+          "D11_1": {
+            "ports": [
+              "D11",
+              "pipeline_11/D"
+            ]
+          },
+          "D4_1": {
+            "ports": [
+              "D4",
+              "pipeline_4/D"
+            ]
+          },
+          "D8_1": {
+            "ports": [
+              "D8",
+              "pipeline_8/D"
+            ]
+          },
+          "D12_1": {
+            "ports": [
+              "D12",
+              "pipeline_12/D"
+            ]
+          },
+          "pipeline_4_Q": {
+            "ports": [
+              "pipeline_4/Q",
+              "Q4"
+            ]
+          },
+          "pipeline_8_Q": {
+            "ports": [
+              "pipeline_8/Q",
+              "Q8"
+            ]
+          },
+          "pipeline_12_Q": {
+            "ports": [
+              "pipeline_12/Q",
+              "Q12"
+            ]
+          },
+          "D13_1": {
+            "ports": [
+              "D13",
+              "pipeline_13/D"
+            ]
+          },
+          "pipeline_13_Q": {
+            "ports": [
+              "pipeline_13/Q",
+              "Q13"
+            ]
+          },
+          "xlconstant_0_dout": {
+            "ports": [
+              "xlconstant_0/dout",
+              "pipeline_0/En",
+              "pipeline_2/En",
+              "pipeline_3/En",
+              "pipeline_1/En",
+              "pipeline_5/En",
+              "pipeline_6/En",
+              "pipeline_7/En",
+              "pipeline_9/En",
+              "pipeline_10/En",
+              "pipeline_11/En",
+              "pipeline_4/En",
+              "pipeline_8/En",
+              "pipeline_12/En",
+              "pipeline_13/En"
+            ]
+          }
+        }
+      },
+      "EX_MEM": {
+        "ports": {
+          "in_clock": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "D1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Q1": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "D3": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "Q3": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "D4": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "Q4": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "D5": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "Q5": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "D2": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "Q2": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          }
+        },
+        "components": {
+          "pipeline_0": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_0_2",
+            "xci_path": "ip\\mips_pipeline_0_2\\mips_pipeline_0_2.xci",
+            "inst_hier_path": "EX_MEM/pipeline_0",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_1": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_1_2",
+            "xci_path": "ip\\mips_pipeline_1_2\\mips_pipeline_1_2.xci",
+            "inst_hier_path": "EX_MEM/pipeline_1",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_2": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_2_3",
+            "xci_path": "ip\\mips_pipeline_2_3\\mips_pipeline_2_3.xci",
+            "inst_hier_path": "EX_MEM/pipeline_2",
+            "parameters": {
+              "width": {
+                "value": "5"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "4",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "4",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_3": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_3_1",
+            "xci_path": "ip\\mips_pipeline_3_1\\mips_pipeline_3_1.xci",
+            "inst_hier_path": "EX_MEM/pipeline_3",
+            "parameters": {
+              "width": {
+                "value": "1"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_4": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_4_0",
+            "xci_path": "ip\\mips_pipeline_4_0\\mips_pipeline_4_0.xci",
+            "inst_hier_path": "EX_MEM/pipeline_4",
+            "parameters": {
+              "width": {
+                "value": "1"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_5": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_5_1",
+            "xci_path": "ip\\mips_pipeline_5_1\\mips_pipeline_5_1.xci",
+            "inst_hier_path": "EX_MEM/pipeline_5",
+            "parameters": {
+              "width": {
+                "value": "1"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              }
+            }
+          },
+          "xlconstant_0": {
+            "vlnv": "xilinx.com:ip:xlconstant:1.1",
+            "xci_name": "mips_xlconstant_0_4",
+            "xci_path": "ip\\mips_xlconstant_0_4\\mips_xlconstant_0_4.xci",
+            "inst_hier_path": "EX_MEM/xlconstant_0"
+          }
+        },
+        "nets": {
+          "i_clk_0_1": {
+            "ports": [
+              "in_clock",
+              "pipeline_0/clk",
+              "pipeline_1/clk",
+              "pipeline_2/clk",
+              "pipeline_3/clk",
+              "pipeline_4/clk",
+              "pipeline_5/clk"
+            ]
+          },
+          "alu_0_zeroFlag": {
+            "ports": [
+              "D",
+              "pipeline_0/D"
+            ]
+          },
+          "pipeline_0_Q2": {
+            "ports": [
+              "pipeline_0/Q",
+              "Q"
+            ]
+          },
+          "pipeline_1_Q1": {
+            "ports": [
+              "D1",
+              "pipeline_1/D"
+            ]
+          },
+          "pipeline_1_Q2": {
+            "ports": [
+              "pipeline_1/Q",
+              "Q1"
+            ]
+          },
+          "D3_1": {
+            "ports": [
+              "D3",
+              "pipeline_3/D"
+            ]
+          },
+          "pipeline_3_Q": {
+            "ports": [
+              "pipeline_3/Q",
+              "Q3"
+            ]
+          },
+          "D4_1": {
+            "ports": [
+              "D4",
+              "pipeline_4/D"
+            ]
+          },
+          "pipeline_4_Q": {
+            "ports": [
+              "pipeline_4/Q",
+              "Q4"
+            ]
+          },
+          "D5_1": {
+            "ports": [
+              "D5",
+              "pipeline_5/D"
+            ]
+          },
+          "pipeline_5_Q": {
+            "ports": [
+              "pipeline_5/Q",
+              "Q5"
+            ]
+          },
+          "D2_1": {
+            "ports": [
+              "D2",
+              "pipeline_2/D"
+            ]
+          },
+          "pipeline_2_Q": {
+            "ports": [
+              "pipeline_2/Q",
+              "Q2"
+            ]
+          },
+          "xlconstant_0_dout": {
+            "ports": [
+              "xlconstant_0/dout",
+              "pipeline_0/En",
+              "pipeline_1/En",
+              "pipeline_3/En",
+              "pipeline_4/En",
+              "pipeline_5/En",
+              "pipeline_2/En"
+            ]
+          }
+        }
+      },
+      "Jump_Block": {
+        "ports": {
+          "address_jump": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "Din": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Din1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          }
+        },
+        "components": {
+          "concat_0": {
+            "vlnv": "xilinx.com:module_ref:concat:1.0",
+            "xci_name": "mips_concat_0_0",
+            "xci_path": "ip\\mips_concat_0_0\\mips_concat_0_0.xci",
+            "inst_hier_path": "Jump_Block/concat_0",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "concat",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "pc_plus_four": {
+                "direction": "I",
+                "left": "3",
+                "right": "0"
+              },
+              "instrn_25_to_0": {
+                "direction": "I",
+                "left": "25",
+                "right": "0"
+              },
+              "address_jump": {
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              }
+            }
+          },
+          "xlslice_5": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "mips_xlslice_4_0",
+            "xci_path": "ip\\mips_xlslice_4_0\\mips_xlslice_4_0.xci",
+            "inst_hier_path": "Jump_Block/xlslice_5",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "25"
+              },
+              "DIN_TO": {
+                "value": "0"
+              },
+              "DOUT_WIDTH": {
+                "value": "26"
+              }
+            }
+          },
+          "xlslice_4": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "mips_xlslice_0_1",
+            "xci_path": "ip\\mips_xlslice_0_1\\mips_xlslice_0_1.xci",
+            "inst_hier_path": "Jump_Block/xlslice_4",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "31"
+              },
+              "DIN_TO": {
+                "value": "28"
+              },
+              "DOUT_WIDTH": {
+                "value": "4"
+              }
+            }
+          }
+        },
+        "nets": {
+          "xlslice_4_Dout": {
+            "ports": [
+              "xlslice_4/Dout",
+              "concat_0/pc_plus_four"
+            ]
+          },
+          "xlslice_5_Dout": {
+            "ports": [
+              "xlslice_5/Dout",
+              "concat_0/instrn_25_to_0"
+            ]
+          },
+          "concat_0_address_jump": {
+            "ports": [
+              "concat_0/address_jump",
+              "address_jump"
+            ]
+          },
+          "pipeline_0_Q": {
+            "ports": [
+              "Din",
+              "xlslice_5/Din"
+            ]
+          },
+          "pipeline_1_Q": {
+            "ports": [
+              "Din1",
+              "xlslice_4/Din"
+            ]
+          }
+        }
+      },
+      "MEM_WB": {
+        "ports": {
+          "in_clock": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "D1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Q1": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "D2": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "Q2": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "D3": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "Q3": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "D4": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "Q4": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          }
+        },
+        "components": {
+          "pipeline_0": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_0_5",
+            "xci_path": "ip\\mips_pipeline_0_5\\mips_pipeline_0_5.xci",
+            "inst_hier_path": "MEM_WB/pipeline_0",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_1": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_1_3",
+            "xci_path": "ip\\mips_pipeline_1_3\\mips_pipeline_1_3.xci",
+            "inst_hier_path": "MEM_WB/pipeline_1",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_2": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_2_1",
+            "xci_path": "ip\\mips_pipeline_2_1\\mips_pipeline_2_1.xci",
+            "inst_hier_path": "MEM_WB/pipeline_2",
+            "parameters": {
+              "width": {
+                "value": "1"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_3": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_3_2",
+            "xci_path": "ip\\mips_pipeline_3_2\\mips_pipeline_3_2.xci",
+            "inst_hier_path": "MEM_WB/pipeline_3",
+            "parameters": {
+              "width": {
+                "value": "1"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              }
+            }
+          },
+          "pipeline_4": {
+            "vlnv": "xilinx.com:module_ref:pipeline:1.0",
+            "xci_name": "mips_pipeline_4_3",
+            "xci_path": "ip\\mips_pipeline_4_3\\mips_pipeline_4_3.xci",
+            "inst_hier_path": "MEM_WB/pipeline_4",
+            "parameters": {
+              "width": {
+                "value": "5"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "pipeline",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "CLK_DOMAIN": {
+                    "value": "mips_in_clock",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "En": {
+                "direction": "I"
+              },
+              "D": {
+                "direction": "I",
+                "left": "4",
+                "right": "0"
+              },
+              "Q": {
+                "direction": "O",
+                "left": "4",
+                "right": "0"
+              }
+            }
+          },
+          "xlconstant_0": {
+            "vlnv": "xilinx.com:ip:xlconstant:1.1",
+            "xci_name": "mips_xlconstant_0_5",
+            "xci_path": "ip\\mips_xlconstant_0_5\\mips_xlconstant_0_5.xci",
+            "inst_hier_path": "MEM_WB/xlconstant_0"
+          }
+        },
+        "nets": {
+          "i_clk_0_1": {
+            "ports": [
+              "in_clock",
+              "pipeline_0/clk",
+              "pipeline_1/clk",
+              "pipeline_2/clk",
+              "pipeline_3/clk",
+              "pipeline_4/clk"
+            ]
+          },
+          "pipeline_0_Q2": {
+            "ports": [
+              "D",
+              "pipeline_0/D"
+            ]
+          },
+          "pipeline_0_Q3": {
+            "ports": [
+              "pipeline_0/Q",
+              "Q"
+            ]
+          },
+          "dataMemory_0_readData": {
+            "ports": [
+              "D1",
+              "pipeline_1/D"
+            ]
+          },
+          "pipeline_1_Q3": {
+            "ports": [
+              "pipeline_1/Q",
+              "Q1"
+            ]
+          },
+          "D2_1": {
+            "ports": [
+              "D2",
+              "pipeline_2/D"
+            ]
+          },
+          "pipeline_2_Q": {
+            "ports": [
+              "pipeline_2/Q",
+              "Q2"
+            ]
+          },
+          "D3_1": {
+            "ports": [
+              "D3",
+              "pipeline_3/D"
+            ]
+          },
+          "pipeline_3_Q": {
+            "ports": [
+              "pipeline_3/Q",
+              "Q3"
+            ]
+          },
+          "D4_1": {
+            "ports": [
+              "D4",
+              "pipeline_4/D"
+            ]
+          },
+          "pipeline_4_Q": {
+            "ports": [
+              "pipeline_4/Q",
+              "Q4"
+            ]
+          },
+          "xlconstant_0_dout": {
+            "ports": [
+              "xlconstant_0/dout",
+              "pipeline_0/En",
+              "pipeline_1/En",
+              "pipeline_2/En",
+              "pipeline_3/En",
+              "pipeline_4/En"
+            ]
+          }
+        }
+      },
+      "slice_and_Extend": {
+        "ports": {
+          "Din": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "outData": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        },
+        "components": {
+          "xlslice_3": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "mips_xlslice_3_0",
+            "xci_path": "ip\\mips_xlslice_3_0\\mips_xlslice_3_0.xci",
+            "inst_hier_path": "slice_and_Extend/xlslice_3",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "15"
+              },
+              "DOUT_WIDTH": {
+                "value": "16"
+              }
+            }
+          },
+          "signExtern_0": {
+            "vlnv": "xilinx.com:module_ref:signExtern:1.0",
+            "xci_name": "mips_signExtern_0_0",
+            "xci_path": "ip\\mips_signExtern_0_0\\mips_signExtern_0_0.xci",
+            "inst_hier_path": "slice_and_Extend/signExtern_0",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "signExtern",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "inData": {
+                "direction": "I",
+                "left": "15",
+                "right": "0"
+              },
+              "outData": {
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              }
+            }
+          }
+        },
+        "nets": {
+          "xlslice_3_Dout": {
+            "ports": [
+              "xlslice_3/Dout",
+              "signExtern_0/inData"
+            ]
+          },
+          "pipeline_0_Q": {
+            "ports": [
+              "Din",
+              "xlslice_3/Din"
+            ]
+          },
+          "signExtern_0_outData": {
+            "ports": [
+              "signExtern_0/outData",
+              "outData"
+            ]
+          }
+        }
+      },
+      "instructionSlice": {
+        "ports": {
+          "Din": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Dout": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "Dout1": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "Dout2": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          }
+        },
+        "components": {
+          "xlslice_0": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "mips_xlslice_0_0",
+            "xci_path": "ip\\mips_xlslice_0_0\\mips_xlslice_0_0.xci",
+            "inst_hier_path": "instructionSlice/xlslice_0",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "25"
+              },
+              "DIN_TO": {
+                "value": "21"
+              },
+              "DOUT_WIDTH": {
+                "value": "5"
+              }
+            }
+          },
+          "xlslice_1": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "mips_xlslice_1_0",
+            "xci_path": "ip\\mips_xlslice_1_0\\mips_xlslice_1_0.xci",
+            "inst_hier_path": "instructionSlice/xlslice_1",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "20"
+              },
+              "DIN_TO": {
+                "value": "16"
+              },
+              "DOUT_WIDTH": {
+                "value": "5"
+              }
+            }
+          },
+          "xlslice_2": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "mips_xlslice_2_0",
+            "xci_path": "ip\\mips_xlslice_2_0\\mips_xlslice_2_0.xci",
+            "inst_hier_path": "instructionSlice/xlslice_2",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "15"
+              },
+              "DIN_TO": {
+                "value": "11"
+              },
+              "DOUT_WIDTH": {
+                "value": "5"
+              }
+            }
+          }
+        },
+        "nets": {
+          "pipeline_0_Q": {
+            "ports": [
+              "Din",
+              "xlslice_1/Din",
+              "xlslice_2/Din",
+              "xlslice_0/Din"
+            ]
+          },
+          "xlslice_0_Dout": {
+            "ports": [
+              "xlslice_0/Dout",
+              "Dout"
+            ]
+          },
+          "xlslice_1_Dout": {
+            "ports": [
+              "xlslice_1/Dout",
+              "Dout1"
+            ]
+          },
+          "xlslice_2_Dout": {
+            "ports": [
+              "xlslice_2/Dout",
+              "Dout2"
+            ]
+          }
+        }
+      },
+      "PCplus4Adder": {
+        "ports": {
+          "op1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "adderOut": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        },
+        "components": {
+          "adder_0": {
+            "vlnv": "xilinx.com:module_ref:adder:1.0",
+            "xci_name": "mips_adder_0_0",
+            "xci_path": "ip\\mips_adder_0_0\\mips_adder_0_0.xci",
+            "inst_hier_path": "PCplus4Adder/adder_0",
+            "parameters": {
+              "width": {
+                "value": "32"
+              }
+            },
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "adder",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "op1": {
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "op2": {
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "adderOut": {
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              }
+            }
+          },
+          "constantFour": {
+            "vlnv": "xilinx.com:ip:xlconstant:1.1",
+            "xci_name": "mips_xlconstant_0_0",
+            "xci_path": "ip\\mips_xlconstant_0_0\\mips_xlconstant_0_0.xci",
+            "inst_hier_path": "PCplus4Adder/constantFour",
+            "parameters": {
+              "CONST_VAL": {
+                "value": "4"
+              },
+              "CONST_WIDTH": {
+                "value": "32"
+              }
+            }
+          }
+        },
+        "nets": {
+          "constantFour_dout": {
+            "ports": [
+              "constantFour/dout",
+              "adder_0/op2"
+            ]
+          },
+          "programCounter_0_pcOut": {
+            "ports": [
+              "op1",
+              "adder_0/op1"
+            ]
+          },
+          "adder_0_adderOut": {
+            "ports": [
+              "adder_0/adderOut",
+              "adderOut"
+            ]
+          }
+        }
+      },
+      "andGate_0": {
+        "vlnv": "xilinx.com:module_ref:andGate:1.0",
+        "xci_name": "mips_andGate_0_0",
+        "xci_path": "ip\\mips_andGate_0_0\\mips_andGate_0_0.xci",
+        "inst_hier_path": "andGate_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "andGate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "pcSrc": {
+            "direction": "I"
+          },
+          "ZF": {
+            "direction": "I"
+          },
+          "branchSignal": {
+            "direction": "O"
+          }
+        }
+      },
+      "programCounter_0": {
+        "vlnv": "xilinx.com:module_ref:programCounter:1.0",
+        "xci_name": "mips_programCounter_0_0",
+        "xci_path": "ip\\mips_programCounter_0_0\\mips_programCounter_0_0.xci",
+        "inst_hier_path": "programCounter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "programCounter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "mips_in_clock",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "PCEn": {
+            "direction": "I"
+          },
+          "pcIn": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "pcOut": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "dataMemory_0": {
+        "vlnv": "xilinx.com:module_ref:dataMemory:1.0",
+        "xci_name": "mips_dataMemory_0_0",
+        "xci_path": "ip\\mips_dataMemory_0_0\\mips_dataMemory_0_0.xci",
+        "inst_hier_path": "dataMemory_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "dataMemory",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "mips_in_clock",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "readAddress": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "writeAddress": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "writeData": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "readData": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "memWrite": {
+            "direction": "I"
+          }
+        }
+      },
+      "controlLogic_0": {
+        "vlnv": "xilinx.com:module_ref:controlLogic:1.0",
+        "xci_name": "mips_controlLogic_0_0",
+        "xci_path": "ip\\mips_controlLogic_0_0\\mips_controlLogic_0_0.xci",
+        "inst_hier_path": "controlLogic_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "controlLogic",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "instruction": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "regDst": {
+            "direction": "O"
+          },
+          "regWrite": {
+            "direction": "O"
+          },
+          "aluSrc": {
+            "direction": "O"
+          },
+          "jmpdetect": {
+            "direction": "O"
+          },
+          "aluOp": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "memWrite": {
+            "direction": "O"
+          },
+          "memToReg": {
+            "direction": "O"
+          },
+          "pcSrc": {
+            "direction": "O"
+          }
+        }
+      },
+      "DataHazardUnit": {
+        "ports": {
+          "ID_EX_RegisterRt": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "ID_EX_RegisterRs": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "EX_MEM_RegWrite": {
+            "direction": "I"
+          },
+          "EX_MEM_memToReg": {
+            "direction": "I"
+          },
+          "EX_MEM_RegisterRd": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "MEM_WB_RegWrite": {
+            "direction": "I"
+          },
+          "MEM_WB_RegisterRd": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "regRdAddr1": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "regRdAddr2": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "regWrData": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "regRdData2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "regRdData1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "regData2": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "regData1": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "muxOut": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "in0": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "in1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "in2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "muxOut1": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "in3": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          }
+        },
+        "components": {
+          "regFileFW_0": {
+            "vlnv": "xilinx.com:module_ref:regFileFW:1.0",
+            "xci_name": "mips_regFileFW_0_0",
+            "xci_path": "ip\\mips_regFileFW_0_0\\mips_regFileFW_0_0.xci",
+            "inst_hier_path": "DataHazardUnit/regFileFW_0",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "regFileFW",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "regRdAddr1": {
+                "direction": "I",
+                "left": "4",
+                "right": "0"
+              },
+              "regRdAddr2": {
+                "direction": "I",
+                "left": "4",
+                "right": "0"
+              },
+              "regWrAddr": {
+                "direction": "I",
+                "left": "4",
+                "right": "0"
+              },
+              "regWrData": {
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "regRdData1": {
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "regRdData2": {
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "regWrEn": {
+                "direction": "I"
+              },
+              "regData1": {
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              },
+              "regData2": {
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              }
+            }
+          },
+          "mux2_1": {
+            "vlnv": "xilinx.com:module_ref:mux2:1.0",
+            "xci_name": "mips_mux2_1_0",
+            "xci_path": "ip\\mips_mux2_1_0\\mips_mux2_1_0.xci",
+            "inst_hier_path": "DataHazardUnit/mux2_1",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "mux2",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "in0": {
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "in1": {
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "in2": {
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "in3": {
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "ctrl": {
+                "direction": "I",
+                "left": "1",
+                "right": "0"
+              },
+              "muxOut": {
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              }
+            }
+          },
+          "mux2_0": {
+            "vlnv": "xilinx.com:module_ref:mux2:1.0",
+            "xci_name": "mips_mux2_0_0",
+            "xci_path": "ip\\mips_mux2_0_0\\mips_mux2_0_0.xci",
+            "inst_hier_path": "DataHazardUnit/mux2_0",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "mux2",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "in0": {
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "in1": {
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "in2": {
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "in3": {
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "ctrl": {
+                "direction": "I",
+                "left": "1",
+                "right": "0"
+              },
+              "muxOut": {
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              }
+            }
+          },
+          "FU_0": {
+            "vlnv": "xilinx.com:module_ref:FU:1.0",
+            "xci_name": "mips_FU_0_0",
+            "xci_path": "ip\\mips_FU_0_0\\mips_FU_0_0.xci",
+            "inst_hier_path": "DataHazardUnit/FU_0",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "FU",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "ForwardA": {
+                "direction": "O",
+                "left": "1",
+                "right": "0"
+              },
+              "ForwardB": {
+                "direction": "O",
+                "left": "1",
+                "right": "0"
+              },
+              "ID_EX_RegisterRs": {
+                "direction": "I",
+                "left": "4",
+                "right": "0"
+              },
+              "ID_EX_RegisterRt": {
+                "direction": "I",
+                "left": "4",
+                "right": "0"
+              },
+              "EX_MEM_RegisterRd": {
+                "direction": "I",
+                "left": "4",
+                "right": "0"
+              },
+              "MEM_WB_RegisterRd": {
+                "direction": "I",
+                "left": "4",
+                "right": "0"
+              },
+              "EX_MEM_RegWrite": {
+                "direction": "I"
+              },
+              "EX_MEM_memToReg": {
+                "direction": "I"
+              },
+              "MEM_WB_RegWrite": {
+                "direction": "I"
+              }
+            }
+          }
+        },
+        "nets": {
+          "ID_EX_RegisterRt_1": {
+            "ports": [
+              "ID_EX_RegisterRt",
+              "FU_0/ID_EX_RegisterRt"
+            ]
+          },
+          "ID_EX_RegisterRs_1": {
+            "ports": [
+              "ID_EX_RegisterRs",
+              "FU_0/ID_EX_RegisterRs"
+            ]
+          },
+          "EX_MEM_RegWrite_1": {
+            "ports": [
+              "EX_MEM_RegWrite",
+              "FU_0/EX_MEM_RegWrite"
+            ]
+          },
+          "EX_MEM_memToReg_1": {
+            "ports": [
+              "EX_MEM_memToReg",
+              "FU_0/EX_MEM_memToReg"
+            ]
+          },
+          "EX_MEM_RegisterRd_1": {
+            "ports": [
+              "EX_MEM_RegisterRd",
+              "FU_0/EX_MEM_RegisterRd"
+            ]
+          },
+          "MEM_WB_RegWrite_1": {
+            "ports": [
+              "MEM_WB_RegWrite",
+              "regFileFW_0/regWrEn",
+              "FU_0/MEM_WB_RegWrite"
+            ]
+          },
+          "MEM_WB_RegisterRd_1": {
+            "ports": [
+              "MEM_WB_RegisterRd",
+              "regFileFW_0/regWrAddr",
+              "FU_0/MEM_WB_RegisterRd"
+            ]
+          },
+          "regRdAddr1_1": {
+            "ports": [
+              "regRdAddr1",
+              "regFileFW_0/regRdAddr1"
+            ]
+          },
+          "regRdAddr2_1": {
+            "ports": [
+              "regRdAddr2",
+              "regFileFW_0/regRdAddr2"
+            ]
+          },
+          "regWrData_1": {
+            "ports": [
+              "regWrData",
+              "regFileFW_0/regWrData",
+              "mux2_1/in3",
+              "mux2_0/in3"
+            ]
+          },
+          "regRdData2_1": {
+            "ports": [
+              "regRdData2",
+              "regFileFW_0/regRdData2"
+            ]
+          },
+          "regRdData1_1": {
+            "ports": [
+              "regRdData1",
+              "regFileFW_0/regRdData1"
+            ]
+          },
+          "regFileFW_0_regData2": {
+            "ports": [
+              "regFileFW_0/regData2",
+              "regData2"
+            ]
+          },
+          "regFileFW_0_regData1": {
+            "ports": [
+              "regFileFW_0/regData1",
+              "regData1"
+            ]
+          },
+          "FU_0_ForwardB": {
+            "ports": [
+              "FU_0/ForwardB",
+              "mux2_1/ctrl"
+            ]
+          },
+          "mux2_1_muxOut": {
+            "ports": [
+              "mux2_1/muxOut",
+              "muxOut"
+            ]
+          },
+          "in0_1": {
+            "ports": [
+              "in0",
+              "mux2_1/in0"
+            ]
+          },
+          "in1_1": {
+            "ports": [
+              "in1",
+              "mux2_1/in1",
+              "mux2_0/in1"
+            ]
+          },
+          "in2_1": {
+            "ports": [
+              "in2",
+              "mux2_1/in2",
+              "mux2_0/in2"
+            ]
+          },
+          "FU_0_ForwardA": {
+            "ports": [
+              "FU_0/ForwardA",
+              "mux2_0/ctrl"
+            ]
+          },
+          "mux2_0_muxOut": {
+            "ports": [
+              "mux2_0/muxOut",
+              "muxOut1"
+            ]
+          },
+          "in3_1": {
+            "ports": [
+              "in3",
+              "mux2_0/in0"
+            ]
+          }
+        }
+      },
+      "ctrlHDU_0": {
+        "vlnv": "xilinx.com:module_ref:ctrlHDU:1.0",
+        "xci_name": "mips_ctrlHDU_0_0",
+        "xci_path": "ip\\mips_ctrlHDU_0_0\\mips_ctrlHDU_0_0.xci",
+        "inst_hier_path": "ctrlHDU_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ctrlHDU",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "mips_in_clock",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "IF_ID_PCSrc": {
+            "direction": "I"
+          },
+          "branch": {
+            "direction": "I"
+          },
+          "IF_ID_Write": {
+            "direction": "O"
+          },
+          "PCWrite": {
+            "direction": "O"
+          },
+          "PCSrcOut": {
+            "direction": "O"
+          }
+        }
+      },
+      "instructionMemory_0": {
+        "vlnv": "xilinx.com:module_ref:instructionMemory:1.0",
+        "xci_name": "mips_instructionMemory_0_0",
+        "xci_path": "ip\\mips_instructionMemory_0_0\\mips_instructionMemory_0_0.xci",
+        "inst_hier_path": "instructionMemory_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "instructionMemory",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "addressBus": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "instruction": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "i_clk_0_1": {
+        "ports": [
+          "in_clock",
+          "RegFile_0/i_clk",
+          "ID_EX/in_clock",
+          "EX_MEM/in_clock",
+          "MEM_WB/in_clock",
+          "programCounter_0/i_clk",
+          "dataMemory_0/i_clk",
+          "IF_ID/in_clock",
+          "ctrlHDU_0/clk"
+        ]
+      },
+      "pipeline_1_Q1": {
+        "ports": [
+          "DataHazardUnit/muxOut",
+          "mux_1/in0",
+          "EX_MEM/D1"
+        ]
+      },
+      "pipeline_2_Q": {
+        "ports": [
+          "ID_EX/Q1",
+          "shiftLeft_0/inData",
+          "mux_1/in1"
+        ]
+      },
+      "ID_EX_Q6": {
+        "ports": [
+          "ID_EX/Q6",
+          "mux_1/ctrl"
+        ]
+      },
+      "mux_1_muxOut": {
+        "ports": [
+          "mux_1/muxOut",
+          "alu_0/op2"
+        ]
+      },
+      "programCounter_0_pcOut": {
+        "ports": [
+          "programCounter_0/pcOut",
+          "PCplus4Adder/op1",
+          "instructionMemory_0/addressBus"
+        ]
+      },
+      "pipeline_0_Q3": {
+        "ports": [
+          "MEM_WB/Q",
+          "mux_2/in0"
+        ]
+      },
+      "pipeline_1_Q3": {
+        "ports": [
+          "MEM_WB/Q1",
+          "mux_2/in1"
+        ]
+      },
+      "MEM_WB_Q3": {
+        "ports": [
+          "MEM_WB/Q3",
+          "mux_2/ctrl"
+        ]
+      },
+      "mux_2_muxOut": {
+        "ports": [
+          "mux_2/muxOut",
+          "RegFile_0/regWrData",
+          "DataHazardUnit/regWrData"
+        ]
+      },
+      "shiftLeft_0_outData": {
+        "ports": [
+          "shiftLeft_0/outData",
+          "adder_1/op1"
+        ]
+      },
+      "pipeline_1_Q": {
+        "ports": [
+          "IF_ID/Q1",
+          "ID_EX/D2"
+        ]
+      },
+      "mux_3_muxOut": {
+        "ports": [
+          "mux_3/muxOut",
+          "mux_4/in0"
+        ]
+      },
+      "pipeline_0_Q2": {
+        "ports": [
+          "EX_MEM/Q",
+          "MEM_WB/D",
+          "dataMemory_0/readAddress",
+          "dataMemory_0/writeAddress",
+          "DataHazardUnit/in1"
+        ]
+      },
+      "pipeline_1_Q2": {
+        "ports": [
+          "EX_MEM/Q1",
+          "dataMemory_0/writeData"
+        ]
+      },
+      "dataMemory_0_readData": {
+        "ports": [
+          "dataMemory_0/readData",
+          "MEM_WB/D1",
+          "DataHazardUnit/in2"
+        ]
+      },
+      "EX_MEM_Q4": {
+        "ports": [
+          "EX_MEM/Q4",
+          "dataMemory_0/memWrite"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "instructionSlice/Dout",
+          "RegFile_0/regRdAddr1",
+          "ID_EX/D13",
+          "DataHazardUnit/regRdAddr1"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "instructionSlice/Dout1",
+          "RegFile_0/regRdAddr2",
+          "ID_EX/D4",
+          "DataHazardUnit/regRdAddr2"
+        ]
+      },
+      "MEM_WB_Q2": {
+        "ports": [
+          "MEM_WB/Q2",
+          "RegFile_0/regWrEn",
+          "DataHazardUnit/MEM_WB_RegWrite"
+        ]
+      },
+      "ID_EX_Q7": {
+        "ports": [
+          "ID_EX/Q7",
+          "alu_0/aluOp"
+        ]
+      },
+      "alu_0_zeroFlag": {
+        "ports": [
+          "alu_0/aluOut",
+          "EX_MEM/D"
+        ]
+      },
+      "instructionMemory_0_instruction": {
+        "ports": [
+          "instructionMemory_0/instruction",
+          "IF_ID/instruction",
+          "controlLogic_0/instruction",
+          "Jump_Block/Din"
+        ]
+      },
+      "pipeline_0_Q": {
+        "ports": [
+          "IF_ID/Q",
+          "slice_and_Extend/Din",
+          "instructionSlice/Din"
+        ]
+      },
+      "adder_0_adderOut": {
+        "ports": [
+          "PCplus4Adder/adderOut",
+          "IF_ID/D",
+          "mux_3/in0",
+          "Jump_Block/Din1"
+        ]
+      },
+      "pipeline_3_Q": {
+        "ports": [
+          "ID_EX/Q2",
+          "adder_1/op2"
+        ]
+      },
+      "signExtern_0_outData": {
+        "ports": [
+          "slice_and_Extend/outData",
+          "ID_EX/D1"
+        ]
+      },
+      "ID_EX_Q5": {
+        "ports": [
+          "ID_EX/Q5",
+          "EX_MEM/D3"
+        ]
+      },
+      "ID_EX_Q9": {
+        "ports": [
+          "ID_EX/Q9",
+          "EX_MEM/D4"
+        ]
+      },
+      "ID_EX_Q10": {
+        "ports": [
+          "ID_EX/Q10",
+          "EX_MEM/D5"
+        ]
+      },
+      "EX_MEM_Q3": {
+        "ports": [
+          "EX_MEM/Q3",
+          "MEM_WB/D2",
+          "DataHazardUnit/EX_MEM_RegWrite"
+        ]
+      },
+      "EX_MEM_Q5": {
+        "ports": [
+          "EX_MEM/Q5",
+          "MEM_WB/D3",
+          "DataHazardUnit/EX_MEM_memToReg"
+        ]
+      },
+      "ID_EX_Q11": {
+        "ports": [
+          "ID_EX/Q11",
+          "andGate_0/pcSrc"
+        ]
+      },
+      "andGate_0_branchSignal": {
+        "ports": [
+          "andGate_0/branchSignal",
+          "mux_4/ctrl",
+          "ctrlHDU_0/branch"
+        ]
+      },
+      "alu_0_zeroFlag1": {
+        "ports": [
+          "alu_0/zeroFlag",
+          "andGate_0/ZF"
+        ]
+      },
+      "mux_4_muxOut": {
+        "ports": [
+          "mux_4/muxOut",
+          "programCounter_0/pcIn"
+        ]
+      },
+      "controlLogic_0_regDst": {
+        "ports": [
+          "controlLogic_0/regDst",
+          "IF_ID/D1"
+        ]
+      },
+      "D5_1": {
+        "ports": [
+          "IF_ID/Q3",
+          "ID_EX/D5"
+        ]
+      },
+      "controlLogic_0_regWrite": {
+        "ports": [
+          "controlLogic_0/regWrite",
+          "IF_ID/D2"
+        ]
+      },
+      "D6_1": {
+        "ports": [
+          "IF_ID/Q4",
+          "ID_EX/D6"
+        ]
+      },
+      "controlLogic_0_aluSrc": {
+        "ports": [
+          "controlLogic_0/aluSrc",
+          "IF_ID/D3"
+        ]
+      },
+      "D7_1": {
+        "ports": [
+          "IF_ID/Q6",
+          "ID_EX/D7"
+        ]
+      },
+      "controlLogic_0_aluOp": {
+        "ports": [
+          "controlLogic_0/aluOp",
+          "IF_ID/D5"
+        ]
+      },
+      "controlLogic_0_memWrite": {
+        "ports": [
+          "controlLogic_0/memWrite",
+          "IF_ID/D6"
+        ]
+      },
+      "D9_1": {
+        "ports": [
+          "IF_ID/Q7",
+          "ID_EX/D9"
+        ]
+      },
+      "controlLogic_0_memToReg": {
+        "ports": [
+          "controlLogic_0/memToReg",
+          "IF_ID/D7"
+        ]
+      },
+      "D10_1": {
+        "ports": [
+          "IF_ID/Q8",
+          "ID_EX/D10"
+        ]
+      },
+      "D11_1": {
+        "ports": [
+          "IF_ID/Q9",
+          "ctrlHDU_0/IF_ID_PCSrc"
+        ]
+      },
+      "controlLogic_0_pcSrc": {
+        "ports": [
+          "controlLogic_0/pcSrc",
+          "IF_ID/D8"
+        ]
+      },
+      "instructionSlice_Dout2": {
+        "ports": [
+          "instructionSlice/Dout2",
+          "ID_EX/D8"
+        ]
+      },
+      "IF_ID_Q2": {
+        "ports": [
+          "IF_ID/Q2",
+          "ID_EX/D12"
+        ]
+      },
+      "ID_EX_Q4": {
+        "ports": [
+          "ID_EX/Q4",
+          "mux_0/in0",
+          "DataHazardUnit/ID_EX_RegisterRt"
+        ]
+      },
+      "ID_EX_Q8": {
+        "ports": [
+          "ID_EX/Q8",
+          "mux_0/in1"
+        ]
+      },
+      "EX_MEM_Q2": {
+        "ports": [
+          "EX_MEM/Q2",
+          "MEM_WB/D4",
+          "DataHazardUnit/EX_MEM_RegisterRd"
+        ]
+      },
+      "ID_EX_Q12": {
+        "ports": [
+          "ID_EX/Q12",
+          "mux_0/ctrl"
+        ]
+      },
+      "mux_0_muxOut": {
+        "ports": [
+          "mux_0/muxOut",
+          "EX_MEM/D2"
+        ]
+      },
+      "MEM_WB_Q4": {
+        "ports": [
+          "MEM_WB/Q4",
+          "RegFile_0/regWrAddr",
+          "DataHazardUnit/MEM_WB_RegisterRd"
+        ]
+      },
+      "ID_EX_Q13": {
+        "ports": [
+          "ID_EX/Q13",
+          "DataHazardUnit/ID_EX_RegisterRs"
+        ]
+      },
+      "RegFile_0_regRdData2": {
+        "ports": [
+          "RegFile_0/regRdData2",
+          "DataHazardUnit/regRdData2"
+        ]
+      },
+      "RegFile_0_regRdData1": {
+        "ports": [
+          "RegFile_0/regRdData1",
+          "DataHazardUnit/regRdData1"
+        ]
+      },
+      "D3_1": {
+        "ports": [
+          "DataHazardUnit/regData2",
+          "ID_EX/D3"
+        ]
+      },
+      "D_1": {
+        "ports": [
+          "DataHazardUnit/regData1",
+          "ID_EX/D"
+        ]
+      },
+      "ID_EX_Q3": {
+        "ports": [
+          "ID_EX/Q3",
+          "DataHazardUnit/in0"
+        ]
+      },
+      "DataHazardUnit_muxOut1": {
+        "ports": [
+          "DataHazardUnit/muxOut1",
+          "alu_0/op1"
+        ]
+      },
+      "ID_EX_Q": {
+        "ports": [
+          "ID_EX/Q",
+          "DataHazardUnit/in3"
+        ]
+      },
+      "ctrlHDU_0_PCWrite": {
+        "ports": [
+          "ctrlHDU_0/PCWrite",
+          "programCounter_0/PCEn"
+        ]
+      },
+      "ctrlHDU_0_IF_ID_Write": {
+        "ports": [
+          "ctrlHDU_0/IF_ID_Write",
+          "IF_ID/En"
+        ]
+      },
+      "ctrlHDU_0_PCSrcOut": {
+        "ports": [
+          "ctrlHDU_0/PCSrcOut",
+          "ID_EX/D11"
+        ]
+      },
+      "controlLogic_0_jmpdetect": {
+        "ports": [
+          "controlLogic_0/jmpdetect",
+          "mux_3/ctrl"
+        ]
+      },
+      "Jump_Block_address_jump": {
+        "ports": [
+          "Jump_Block/address_jump",
+          "mux_3/in1"
+        ]
+      },
+      "adder_1_adderOut": {
+        "ports": [
+          "adder_1/adderOut",
+          "mux_4/in1"
+        ]
+      }
+    }
+  }
+}

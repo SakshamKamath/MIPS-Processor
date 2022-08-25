@@ -1,0 +1,37 @@
+
+module ctrlHDU(
+input clk,
+input IF_ID_PCSrc,
+input branch,
+output reg IF_ID_Write,
+output PCWrite,
+output PCSrcOut,
+output reg [3:0] count
+);
+
+
+assign PCSrcOut = (count==3'd0) & IF_ID_PCSrc;
+assign PCWrite = ~PCSrcOut; //to disable PC for 1 clk cycle
+initial
+begin
+count = 3'd0;
+IF_ID_Write = 1;
+end
+
+always @(posedge clk)
+	begin
+		if(IF_ID_PCSrc)
+			count <= count + 1;
+		else
+			count <= 3'd0;
+	end
+	
+always @(*)
+begin
+    if(PCSrcOut | (branch & (count==3'd1)))
+		IF_ID_Write <= 0;
+    else
+		IF_ID_Write <= 1;
+end
+
+endmodule

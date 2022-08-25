@@ -1,0 +1,7 @@
+module clkEn(
+input clk,
+input En,
+output CLK);
+
+assign CLK = clk & En;
+endmodule

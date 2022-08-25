@@ -1,0 +1,181 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/new/shiftLeft.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftLeft
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/new/reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/new/regFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/Assignment 2/mips/mips.srcs/sources_1/new/pipelineReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipeline
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/new/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/Assignment 2/mips/mips.srcs/sources_1/new/concat.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module concat
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/new/signExtern.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signExtern
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/Assignment 2/mips/mips.srcs/sources_1/new/andGate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module andGate
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/new/programCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module programCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/new/dataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/new/controlLogic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlLogic
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/new/regFileFWU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regFileFW
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/new/ForwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/new/instructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.srcs/sources_1/new/controlHZDunit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrlHDU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_mux_1_0/sim/mips_mux_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_mux_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_mux_2_0/sim/mips_mux_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_mux_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_shiftLeft_0_0/sim/mips_shiftLeft_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_shiftLeft_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_mux_3_0/sim/mips_mux_3_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_mux_3_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_RegFile_0_0/sim/mips_RegFile_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_RegFile_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_alu_0_0/sim/mips_alu_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_alu_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_mux_0_1/sim/mips_mux_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_mux_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_mux_0_0/sim/mips_mux_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_mux_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_0_0/sim/mips_pipeline_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_1_0/sim/mips_pipeline_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_2_2/sim/mips_pipeline_2_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_2_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_3_3/sim/mips_pipeline_3_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_3_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_4_1/sim/mips_pipeline_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_6_1/sim/mips_pipeline_6_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_6_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_7_1/sim/mips_pipeline_7_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_7_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_8_1/sim/mips_pipeline_8_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_8_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_9_1/sim/mips_pipeline_9_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_9_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_adder_1_0/sim/mips_adder_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_adder_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_0_1/sim/mips_pipeline_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_10_0/sim/mips_pipeline_10_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_10_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_11_0/sim/mips_pipeline_11_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_11_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_12_0/sim/mips_pipeline_12_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_12_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_13_0/sim/mips_pipeline_13_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_13_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_1_1/sim/mips_pipeline_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_2_0/sim/mips_pipeline_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_3_0/sim/mips_pipeline_3_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_3_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_4_2/sim/mips_pipeline_4_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_4_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_5_0/sim/mips_pipeline_5_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_5_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_6_0/sim/mips_pipeline_6_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_6_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_7_0/sim/mips_pipeline_7_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_7_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_8_2/sim/mips_pipeline_8_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_8_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_9_0/sim/mips_pipeline_9_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_9_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_xlconstant_0_3/sim/mips_xlconstant_0_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_xlconstant_0_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_0_2/sim/mips_pipeline_0_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_0_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_1_2/sim/mips_pipeline_1_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_1_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_2_3/sim/mips_pipeline_2_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_2_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_3_1/sim/mips_pipeline_3_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_3_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_4_0/sim/mips_pipeline_4_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_4_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_5_1/sim/mips_pipeline_5_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_5_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_xlconstant_0_4/sim/mips_xlconstant_0_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_xlconstant_0_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_concat_0_0/sim/mips_concat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_concat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_xlslice_4_0/sim/mips_xlslice_4_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_xlslice_4_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_xlslice_0_1/sim/mips_xlslice_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_xlslice_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_0_5/sim/mips_pipeline_0_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_0_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_1_3/sim/mips_pipeline_1_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_1_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_2_1/sim/mips_pipeline_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_2_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_3_2/sim/mips_pipeline_3_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_3_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_pipeline_4_3/sim/mips_pipeline_4_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_pipeline_4_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_xlconstant_0_5/sim/mips_xlconstant_0_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_xlconstant_0_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_xlslice_3_0/sim/mips_xlslice_3_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_xlslice_3_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_signExtern_0_0/sim/mips_signExtern_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_signExtern_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_xlslice_0_0/sim/mips_xlslice_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_xlslice_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_xlslice_1_0/sim/mips_xlslice_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_xlslice_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_xlslice_2_0/sim/mips_xlslice_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_xlslice_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_adder_0_0/sim/mips_adder_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_adder_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_xlconstant_0_0/sim/mips_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_andGate_0_0/sim/mips_andGate_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_andGate_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_programCounter_0_0/sim/mips_programCounter_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_programCounter_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_dataMemory_0_0/sim/mips_dataMemory_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_dataMemory_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_controlLogic_0_0/sim/mips_controlLogic_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_controlLogic_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_regFileFW_0_0/sim/mips_regFileFW_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_regFileFW_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_mux2_1_0/sim/mips_mux2_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_mux2_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_mux2_0_0/sim/mips_mux2_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_mux2_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_FU_0_0/sim/mips_FU_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_FU_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_instructionMemory_0_0/sim/mips_instructionMemory_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_instructionMemory_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/ip/mips_ctrlHDU_0_0/sim/mips_ctrlHDU_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_ctrlHDU_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/sim/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataHazardUnit_imp_12JJTV5
+INFO: [VRFC 10-311] analyzing module EX_MEM_imp_1V24RCY
+INFO: [VRFC 10-311] analyzing module ID_EX_imp_SWED4A
+INFO: [VRFC 10-311] analyzing module IF_ID_imp_1X1XVU7
+INFO: [VRFC 10-311] analyzing module Jump_Block_imp_GZ52XL
+INFO: [VRFC 10-311] analyzing module MEM_WB_imp_1GJVWYO
+INFO: [VRFC 10-311] analyzing module PCplus4Adder_imp_1AL2EPE
+INFO: [VRFC 10-311] analyzing module instructionSlice_imp_1GMHSSO
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-311] analyzing module slice_and_Extend_imp_1WA3XA
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BITS/ECE 3-2/CS F342 - COMPUTER ARCHITECHTURE/miniProject/mips/mips.gen/sources_1/bd/mips/hdl/mips_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_wrapper

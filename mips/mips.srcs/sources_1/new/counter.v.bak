@@ -1,0 +1,18 @@
+module counter(
+input IF_ID_PCSrc,
+input clock,
+input IF_ID_Write,
+output reg [1:0] count
+);
+initial
+count=0;
+
+always @(posedge clock)
+	begin
+	if(IF_ID_PCSrc & ~IF_ID_Write) //when branch is detected and pipeline is stalled
+		count <=count+1'b1;
+	else
+		count<=0;
+	end
+
+endmodule
